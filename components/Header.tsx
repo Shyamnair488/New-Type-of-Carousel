@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { AiOutlineHome } from 'react-icons/ai';
+import { BsInfoCircle } from 'react-icons/bs';
+import { MdMiscellaneousServices } from 'react-icons/md';
+import { RiContactsLine, RiLoginBoxLine } from 'react-icons/ri';
 
 const Header = () => {
   return (
@@ -12,26 +16,30 @@ const Header = () => {
             <div className="flex space-x-8 ml-2">
               <Link 
                 href="/" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
+                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
+                <AiOutlineHome className="text-2xl" />
                 Home
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
+                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
+                <BsInfoCircle className="text-2xl" />
                 About
               </Link>
               <Link 
                 href="/services" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
+                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
+                <MdMiscellaneousServices className="text-2xl" />
                 Services
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
+                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
+                <RiContactsLine className="text-2xl" />
                 Contact
               </Link>
             </div>
@@ -40,16 +48,18 @@ const Header = () => {
             <div className="flex space-x-8 mr-8">
               <Link 
                 href="/user-login" 
-                className="text-gray-900 hover:text-white text-xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105 bg-white hover:bg-gray-800 rounded-lg px-6 py-2 border-2 border-gray-700 hover:border-gray-800 shadow-md"
+                className="text-gray-900 hover:text-white text-xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105 bg-white hover:bg-gray-800 rounded-lg px-6 py-2 border-2 border-gray-700 hover:border-gray-800 shadow-md flex items-center gap-2"
                 style={{ textDecoration: 'none' }}
               >
+                <RiLoginBoxLine className="text-xl" />
                 User Login
               </Link>
               <Link 
                 href="/farm-login" 
-                className="text-white hover:text-white text-xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105 bg-gray-800 hover:bg-black rounded-lg px-6 py-2 border-2 border-gray-800 hover:border-black shadow-md"
+                className="text-white hover:text-white text-xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105 bg-gray-800 hover:bg-black rounded-lg px-6 py-2 border-2 border-gray-800 hover:border-black shadow-md flex items-center gap-2"
                 style={{ textDecoration: 'none' }}
               >
+                <RiLoginBoxLine className="text-xl" />
                 Farm Login
               </Link>
             </div>
