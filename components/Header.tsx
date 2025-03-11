@@ -9,7 +9,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex justify-between items-center h-full ">
             {/* Left side menu items */}
-            <div className="flex space-x-16 ml-16">
+            <div className="flex space-x-8 ml-2">
               <Link 
                 href="/" 
                 className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
@@ -24,10 +24,24 @@ const Header = () => {
               >
                 About
               </Link>
+              <Link 
+                href="/" 
+                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
+                style={{ textDecoration: 'none' }}
+              >
+                Services
+              </Link>
+              <Link 
+                href="/" 
+                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
+                style={{ textDecoration: 'none' }}
+              >
+                Contact
+              </Link>
             </div>
 
             {/* Right side menu items */}
-            <div className="flex space-x-8 mr-16">
+            <div className="flex space-x-8 mr-8">
               <Link 
                 href="/user-login" 
                 className="text-gray-700 hover:text-white text-xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105 bg-white hover:bg-gray-800 rounded-lg px-6 py-2 border-2 border-gray-700 hover:border-gray-800 shadow-md"

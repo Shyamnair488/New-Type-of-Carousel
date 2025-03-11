@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -5,11 +6,25 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">About Us</h3>
-            <p className="text-gray-400">
-              We are dedicated to providing the best services and solutions for our customers.
-            </p>
+          <div className="flex items-start space-x-6">
+            <div className="flex-shrink-0">
+              <div className="relative w-40 h-40 rounded-full overflow-hidden border-2 border-gray-700">
+                <Image
+                    src="/images/header/farmlogo.jpg"
+                    alt="Company Logo"
+                    width={300}
+                    height={300}
+                    className="object-cover scale-150"
+                    priority
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">About Us</h3>
+              <p className="text-gray-400">
+                We are dedicated to providing the best services and solutions for our customers.
+              </p>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
