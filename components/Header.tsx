@@ -12,29 +12,25 @@ const Header = () => {
             <div className="flex space-x-8 ml-2">
               <Link 
                 href="/" 
-                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
-                style={{ textDecoration: 'none' }}
+                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
               >
                 Home
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
-                style={{ textDecoration: 'none' }}
+                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
               >
                 About
               </Link>
               <Link 
-                href="/" 
-                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
-                style={{ textDecoration: 'none' }}
+                href="/services" 
+                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
               >
                 Services
               </Link>
               <Link 
-                href="/" 
-                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide no-underline transition-all duration-300 hover:scale-105"
-                style={{ textDecoration: 'none' }}
+                href="/contact" 
+                className="text-gray-700 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline"
               >
                 Contact
               </Link>
