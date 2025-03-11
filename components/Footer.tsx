@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-x-12 gap-y-12" style={{ border: '1px solid red' }}>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-x-12 gap-y-12">
           {/* Logo Column */}
           <div className="flex flex-col items-center md:items-start">
             <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-gray-700 hover:border-gray-500 transition-all duration-300 shadow-2xl hover:shadow-gray-700/50">
