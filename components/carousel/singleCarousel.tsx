@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import Button1 from '../Buttons/button1';
+import Button2 from '../Buttons/buttons2';
 
 interface HotelData {
   id: number;
@@ -142,6 +144,10 @@ const SingleCarousel: React.FC<CarouselProps> = ({
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-light leading-relaxed drop-shadow-md">
           Experience the finest accommodations and world-class service at our premium hotels and resorts worldwide.
         </p>
+        <div className="flex justify-center gap-4">
+          <Button1 /> 
+          <Button2 /> 
+        </div>
       </div>
 
       {/* Carousel Slides */}
