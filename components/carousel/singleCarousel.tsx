@@ -138,7 +138,7 @@ const SingleCarousel: React.FC<CarouselProps> = ({
 
       {/* Hero Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center max-w-4xl px-4">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
+        <h1 className="text-7xl lg:text-8xl md:text-[10rem] font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
           Welcome to Luxury Living
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-light leading-relaxed drop-shadow-md">
