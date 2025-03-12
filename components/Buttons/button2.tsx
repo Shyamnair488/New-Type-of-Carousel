@@ -119,4 +119,3 @@ const StyledWrapper = styled.div`
 
 export default Button2;
 
-//  hello
