@@ -16,28 +16,28 @@ const Header = () => {
             <div className="flex space-x-2 ml-1 mr-2" >
               <Link 
                 href="/" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
+                className="text-gray-900 hover:text-black text-xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
                 <AiOutlineHome className="text-2xl" />
                 Home
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
+                className="text-gray-900 hover:text-black text-xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
                 <BsInfoCircle className="text-2xl" />
                 About
               </Link>
               <Link 
                 href="/services" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
+                className="text-gray-900 hover:text-black text-xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
                 <MdMiscellaneousServices className="text-2xl" />
                 Services
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-900 hover:text-black text-2xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
+                className="text-gray-900 hover:text-black text-xl font-semibold tracking-wide transition-all duration-300 hover:scale-105 no-underline flex items-center gap-2"
               >
                 <RiContactsLine className="text-2xl" />
                 Contact
@@ -62,6 +62,7 @@ const Header = () => {
                 <RiLoginBoxLine className="text-xl" />
                 Farm Login
               </Link>
+              
             </div>
           </div>
         </div>
