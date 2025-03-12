@@ -255,3 +255,5 @@ const SingleCarousel: React.FC<CarouselProps> = ({
 };
 
 export default SingleCarousel;
+
+
