@@ -3,7 +3,7 @@
 import SingleCarousel from './singleCarousel';
 
 const CarouselPage = () => {
-  const hotelData = [
+  const hotelData = [ 
     {
       id: 1,
       name: "Hotel ABC",

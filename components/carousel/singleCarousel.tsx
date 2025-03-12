@@ -174,21 +174,21 @@ const SingleCarousel: React.FC<CarouselProps> = ({
             <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-transparent" />
             
             {/* Content Box */}
-            <div className="absolute bottom-8 right-8 w-full max-w-lg text-left p-5 bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 shadow-xl">
-              <div className="flex justify-between items-start mb-2">
-                <h2 className="text-white font-bold text-lg md:text-2xl tracking-tight flex-1">
+            <div className="absolute bottom-8 right-8 w-full max-w-md text-left p-4 bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 shadow-xl">
+              <div className="flex flex-col mb-2">
+                <h2 className="text-white font-bold text-sm md:text-base tracking-tight">
                   {item.name}
                 </h2>
-                <div className="flex items-center gap-0.5 ml-2" aria-label={`${item.star} out of 5 stars`}>
+                <div className="flex items-center gap-1 mt-1" aria-label={`${item.star} out of 5 stars`}>
                   {renderStars(item.star)}
                 </div>
               </div>
               
-              <p className="text-white/90 text-sm md:text-base mb-2 font-light leading-relaxed line-clamp-2">
+              <p className="text-white/90 text-xs md:text-sm mb-2 font-light leading-relaxed line-clamp-2">
                 {item.description}
               </p>
               
-              <p className="text-gray-200/80 text-xs md:text-sm leading-relaxed mb-4 line-clamp-2">
+              <p className="text-gray-200/80 text-xs leading-relaxed mb-4 line-clamp-2">
                 {item.content}
               </p>
 
@@ -255,3 +255,5 @@ const SingleCarousel: React.FC<CarouselProps> = ({
 };
 
 export default SingleCarousel;
+
+
