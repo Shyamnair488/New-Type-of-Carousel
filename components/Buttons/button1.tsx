@@ -5,7 +5,7 @@ const Button1 = () => {
     <StyledWrapper>
       <button>
         <div className="blur-gradient" />
-        Farm Registration
+        Book Farm House
       </button>
     </StyledWrapper>
   );
