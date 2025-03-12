@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Button1 from '../Buttons/button1';
-import Button2 from '../Buttons/buttons2';
+import Button2 from '../Buttons/button2';
 
 interface HotelData {
   id: number;

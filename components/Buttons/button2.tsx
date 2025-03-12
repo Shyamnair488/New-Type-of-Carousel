@@ -13,22 +13,21 @@ const Button2 = () => {
 const StyledWrapper = styled.div`
   button {
     padding: 1em 2.2em;
-    border: 2px solid #8B5CF6;
+    border: 2px solid #17C3B2;
     position: relative;
     overflow: hidden;
-    background-color: rgba(139, 92, 246, 0.1);
+    background-color: transparent;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     z-index: 1;
     font-family: inherit;
     color: #ffffff;
-    letter-spacing: 1px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
-    backdrop-filter: blur(10px);
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(23, 195, 178, 0.2);
   }
 
   button::before {
@@ -38,51 +37,27 @@ const StyledWrapper = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(35deg);
-    background: linear-gradient(45deg, #8B5CF6, #7C3AED);
-    transition: 0.6s ease;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: 0.5s ease;
     display: block;
     z-index: -1;
   }
 
   button:hover::before {
-    width: 110%;
+    width: 105%;
   }
 
   button:hover {
     color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
-    border-color: #7C3AED;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(23, 195, 178, 0.4);
   }
 
   button:active {
     transform: translateY(1px);
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-  }
-
-  @media (hover: hover) {
-    button::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        45deg,
-        rgba(139, 92, 246, 0.3),
-        rgba(124, 58, 237, 0.3)
-      );
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      z-index: -2;
-    }
-
-    button:hover::after {
-      opacity: 1;
-    }
+    box-shadow: 0 2px 10px rgba(23, 195, 178, 0.3);
   }
 `;
 
-export default Button2; 
+export default Button2;
