@@ -13,14 +13,14 @@ const Button2 = () => {
 
 const StyledWrapper = styled.div`
   button {
-    padding: 0.8em 1.8em;
+    padding: 0.6em 1.4em;
     border: 2px solid #17C3B2;
     position: relative;
     overflow: hidden;
     background-color: rgba(23, 195, 178, 0.1);
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
@@ -32,6 +32,14 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 300px;
+
+    @media (min-width: 640px) {
+      padding: 0.8em 1.8em;
+      font-size: 16px;
+      width: auto;
+    }
   }
 
   .blur-gradient {
@@ -114,6 +122,40 @@ const StyledWrapper = styled.div`
 
   button:hover::after {
     animation: shimmer 1s infinite;
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Mobile first approach */
+  .element {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @media (min-width: 640px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .element {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .element {
+      width: 33.33%;
+    }
   }
 `;
 
